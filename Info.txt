@@ -1,0 +1,15 @@
+This repo contains an example of exposing a ML Model as an public api .
+
+For this we need to have a account in ngrox , as it needs a valid identity or account to process the public api.
+
+This is a temporary solution to check if our api is working fine or not as till the below code is running 
+{
+ngrok_tunnel = ngrok.connect(8000)
+print('Public URL:', ngrok_tunnel.public_url)
+nest_asyncio.apply()
+uvicorn.run(app, port=8000)
+}
+
+we will have the url working , the moment it closes the url will not work .
+
+
